@@ -268,12 +268,13 @@ li::before
     color: rgb(var(--color-white),.8);
 }
 
-#footer a
+#footer > a
 {
-    color: currentColor;
+    margin-left: 3px;
     font-weight: bold;
+    color: currentColor;
 }
-#footer a:hover
+#footer > a:hover
 {
     color: rgb(var(--color-white));
 }
@@ -290,4 +291,48 @@ li::before
     height: .11em;
     margin: 0 5px;
     background-color: currentColor;
+}
+
+
+
+@media only screen and (max-width: 620px){
+    body
+    {
+        padding: 10px;
+    }
+
+    .title-header
+    {
+        font-size: 10vw;
+    }
+
+    .box
+    {
+        width: auto;
+        font-size: 5vw;
+        grid-template-columns: 1fr;
+    }
+
+    input[name="namePerson"], 
+    button
+    {
+        padding: .7em;
+        font-size: .9em;
+    }
+
+    button svg
+    {
+        height: 4vw;
+    }
+
+    .empty
+    {
+        padding: 10px 0;
+    }
+
+    #footer
+    {
+        padding: .5em;
+        font-size: 3.5vw;
+    }
 }
